@@ -61,13 +61,37 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Dime Como Llego A Ti",
       artist: "Erick Franchesky",
       src: "./songs/Erick Franchesky - Dime Como Llego A Ti.mp3",
-      img: "./images/Erick-Franchesky.jpg",
+      img: "./images/Imagen_corazon_meli.jpg",
     },
     {
       title: "Cometas",
       artist: "Bacalao Men",
       src: "./songs/Bacalao Men - Cometas.mp3",
       img: "./images/Imagen_roblox_bate.jpg",
+    },
+    {
+      title: "Yebba’s Heartbreak",
+      artist: "Drake y Yebba",
+      src: "./songs/Drake - Yebba’s Heartbreak.mp3",
+      img: "./images/Los_dos_corazones.jpg",
+    },
+    {
+      title: "El Muñeco de la ciudad",
+      artist: "Bobby Valentin",
+      src: "./songs/Bobby Valentin - El Muñeco de la Ciudad.mp3",
+      img: "./images/Image_free.jpg",
+    },
+    {
+      title: "Te quiero",
+      artist: "Domingo Quiñones",
+      src: "./songs/Domingo Quinones - Te Quiero.mp3",
+      img: "./images/Imagen_dibujo.jpg",
+    },
+    {
+      title: "El tun tun de tu corazón",
+      artist: "Orquesta la palabra",
+      src: "./songs/Orquesta La Palabra - El Tun Tun De Tu Corazón.mp3",
+      img: "./images/imagen_tun_tun.jpg",
     },
   ];
 
