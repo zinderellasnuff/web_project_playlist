@@ -1,0 +1,95 @@
+.footer__section-bottom {
+  text-align: right;
+  padding: 5px;
+  background: rgba(17, 25, 40, 0.75);
+  border-radius: 0 0 auto 35px;
+}
+
+.footer__list-button {
+  height: 40px;
+  width: 40px;
+  background: rgba(17, 25, 40, 0.75);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+.footer__list-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.footer__song-list {
+  display: none;
+  position: absolute;
+  right: -250px;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background: rgba(17, 25, 40, 0.75);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-left: 1px solid rgba(255, 255, 255, 0.125);
+  transition: right 0.3s;
+  overflow: auto;
+}
+
+.footer__song-list.show {
+  display: block;
+  right: 0;
+}
+
+.footer__close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 40px;
+  width: 40px;
+  background: rgba(17, 25, 40, 0.75);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  font-size: 16px;
+  margin-left: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+
+.footer__song-list ul {
+  list-style: none; /* Quitar los puntos de la lista */
+  padding: 0;
+  margin: 0;
+}
+
+.footer__song-list li {
+  padding: 10px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 14px;
+  background: rgba(17, 25, 40, 0.5);
+  transition: background 0.3s, color 0.3s;
+}
+
+.footer__song-list li:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #687eff; /* Color del texto en hover */
+}
+
+.footer__song-list li:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Borde superior en el primer elemento */
+}
+
+.footer__song-list li:last-child {
+  border-bottom: none; /* Eliminar el borde en el último elemento */
+}

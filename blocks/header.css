@@ -1,0 +1,28 @@
+.header {
+  background: rgba(17, 25, 40, 0.75);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px 15px 0 0;
+}
+
+.header__name {
+  color: white;
+  padding: 4% 0;
+}
+
+.header__album-art {
+  width: 100%;
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header__image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+}

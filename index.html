@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playlist</title>
+
+    <link rel="stylesheet" href="./pages/index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__name">MeliFlow Music Player</div>
+        <div class="header__album-art">
+          <img class="header__image" />
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="content__text-area">
+          <div class="content__song-info content__song-title"></div>
+          <div class="content__song-info content__artist-name"></div>
+        </div>
+
+        <div class="content__progress">
+          <div class="content__progress-bar"></div>
+        </div>
+
+        <div class="content__time-display">
+          <span class="content__current-time">0:00</span> /
+          <span class="content__duration">0:00</span>
+        </div>
+
+        <div class="content__playback-controls">
+          <button class="content__button content__button--skip-backward">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button class="content__button content__button--play-pause">
+            <i class="fas fa-play"></i>
+          </button>
+          <button class="content__button content__button--skip-forward">
+            <i class="fas fa-forward"></i>
+          </button>
+        </div>
+        <div class="content__volume-controls">
+          <button class="content__button content__volume-btn">
+            <i class="fas fa-volume-up"></i>
+          </button>
+          <input
+            type="range"
+            class="content__volume-slider"
+            id="volume-slider"
+            min="0"
+            max="100"
+            value="100"
+          />
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__section-bottom">
+          <button class="footer__list-button">
+            <i class="fas fa-list"></i>
+          </button>
+        </div>
+        <div class="footer__song-list">
+          <button id="footer__close-list" class="footer__close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul>
+            <li data-index="0">Congratulations (con Bilal) - Mac Miller</li>
+            <li data-index="1">
+              Say Yes (con Al Baro y A. Cheeze) - Buhodermia 夜
+            </li>
+            <li data-index="2">Virgen - Adolescent's Orquesta</li>
+            <li data-index="3">A VOS - Milo j</li>
+            <li data-index="4">
+              See You Again (con Kali Uchis) - Tyler, The Creator
+            </li>
+            <li data-index="5">Dime Como Llego A Ti - Erick Franchesky</li>
+            <li data-index="6">Cometas - Bacalao Men</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <audio class="audio__player"></audio>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
