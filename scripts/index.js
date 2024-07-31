@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Te quiero",
       artist: "Domingo Quiñones",
       src: "./songs/Domingo Quinones - Te Quiero.mp3",
-      img: "./images/Imagen_dibujo.jpg",
+      img: "./images/imagen_dibujo.jpg",
     },
     {
       title: "El tun tun de tu corazón",
