@@ -208,7 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
   closeLisbutton.addEventListener("click", toggleSongList);
   songItems.forEach((item) => item.addEventListener("click", playSelectedSong));
   audioPlayer.addEventListener("timeupdate", updateProgressBar);
-  audioPlayer.addEventListener("ended", nextSong); // Aquí añadimos el event listener
+  audioPlayer.addEventListener("ended", nextSong); 
   progressContainer.addEventListener("click", setProgressBar);
   skipForwardButton.addEventListener("click", nextSong);
   skipBackwardButton.addEventListener("click", prevSong);
